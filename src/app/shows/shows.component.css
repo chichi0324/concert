@@ -1,0 +1,72 @@
+
+ #address{
+  width:150px;
+}
+
+.keyWord{
+  width:150px;
+}
+
+label{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+#concert_list{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#concert_content{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  /*  padding: 20px;
+   border-style: solid;
+  border-width: 2px 10px 4px 20px;
+  border-color: #FFEE99;*/
+}
+
+
+#imgTop{
+ margin-right: 10px;
+ padding-left: 0;
+}
+
+ul .concert_left{
+  background-color: #FFEE99;
+  color: black;
+}
+
+.show_list{
+  width: 32%;
+  height: 100%;
+  border-style: outset;
+  padding: 5px;
+  margin: 2px;
+}
+
+.show_img{
+  padding: 5px;
+  width: 100%;
+}
+
+.activity{
+  margin: 5px
+}
+
+tr{
+  padding: 10px
+}
+
+
+td{
+  padding: 3px;
+}
+
+th,table{
+  text-align:center;
+  word-break: keep-all;
+}
+
+

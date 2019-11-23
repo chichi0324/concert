@@ -1,0 +1,11 @@
+<!--第二列右邊部份==================================================-->
+<div class="col-xs-12 col-sm-9 ">
+    <div class="order_detail">
+      <label ><h3>訂單查詢</h3></label>
+        <br>
+        <div class="order_item" *ngFor="let order of orderData;">
+          <app-order-title [order]="order"  (showDetail)="doModify($event)"></app-order-title>
+          <app-order-detail [order]="order" (titleChanged)="doModify($event)" (delete)="doDelete($event)"></app-order-detail>
+        </div>
+    </div>
+</div>

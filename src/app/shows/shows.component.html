@@ -1,0 +1,15 @@
+<!--第二列右邊部份==================================================-->
+<div class="col-xs-12 col-sm-9 " id="concert_content">
+
+        <div class="col-xs-12 col-sm-4 show_list"
+             id="show{{idx}}"
+             *ngFor="let show of showData; let idx=index">
+          <table>
+            <tr><th><h4><b>{{show.name}}</b></h4></th></tr>
+            <tr><td><img [src]="show.pic" class="show_img"></td></tr>
+            <tr><td>{{show.date}}</td></tr>
+            <tr><td><a routerLink="/area/{{show.id}}" class="btn btn-danger btn-sm activity" role="button">立即購票</a></td></tr>
+          </table>
+        </div>
+
+</div>

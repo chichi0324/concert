@@ -1,0 +1,41 @@
+header{
+  height: 20px;
+}
+
+header ul{
+  margin: 0;
+}
+
+header a,
+header li{
+  color:#777;
+  font-weight: bold
+}
+
+#imgTop{
+	margin-right: 10px;
+	padding-left: 0;
+}
+
+#navbar-title{
+  color: white;
+  font-family:Microsoft JhengHei;
+}
+
+.navbar-default {
+  background-color: #FF5511;
+  border-color: #FF5511;
+  border-radius: 0;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color:white;
+    background-color:#C63300;
+}
+
+

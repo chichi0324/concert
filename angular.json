@@ -20,7 +20,11 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/api",
+              "src/concert_index.html",
+              "src/location.html",
+              "src/order.html"
             ],
             "styles": [
               "src/styles.css"

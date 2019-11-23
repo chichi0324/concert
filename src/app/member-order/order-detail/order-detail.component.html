@@ -1,0 +1,64 @@
+<div class="col-xs-12 col-sm-12"
+[class.selected_show]="order.showDetail === '隱藏明細'"
+[class.selected_hide]="order.showDetail === '顯示明細'" >
+  <table class="table table-hover">
+      <thead>
+          <tr>
+              <th class="text-center">場次/日期</th>
+              <th class="text-center">場地/區域</th>
+              <th class="text-center">張數</th>
+              <th class="text-center">單價</th>
+              <th class="text-center">總價</th>
+              <th *ngIf="isEdit" class="text-center"></th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let area of order.area;">
+              <td class="col-md-4 text-center">{{order.show}}</td>
+              <td class="col-md-3 text-center">{{order.location}} / {{area.name}}</td>
+              <td class="col-md-1 text-center">
+                <label *ngIf="!isEdit">{{area.qty}}</label>
+                <input *ngIf="isEdit" type="text" class="form-control" id="exampleInputEmail1" [value]="area.qty" [(ngModel)]="area.qty" (change)="doCalculate()">
+              </td>
+              <td class="col-md-2 text-center">${{area.unit_pric}}</td>
+              <td class="col-md-1 text-center">${{area.unit_pric*area.qty}}</td>
+              <td *ngIf="isEdit" class="col-md-1 text-center"><button type="button" class="btn btn-danger" (click)="deleteTicketItem()">刪除</button></td>
+          </tr>
+          <tr>
+              <td>   </td>
+              <td>   </td>
+              <td>   </td>
+              <td><h5>小記</h5></td>
+              <td class="text-center"><h5><strong>${{sum}}</strong></h5></td>
+              <td *ngIf="isEdit">   </td>
+          </tr>
+          <tr>
+              <td>   </td>
+              <td>   </td>
+              <td>   </td>
+              <td><h5>運費</h5></td>
+              <td class="text-center"><h5><strong>${{fee}}</strong></h5></td>
+              <td *ngIf="isEdit">   </td>
+          </tr>
+          <tr>
+              <td>   </td>
+              <td>   </td>
+              <td>   </td>
+              <td><h3>合計</h3></td>
+              <td class="text-center"><h3><strong>${{sum+fee}}</strong></h3></td>
+              <td *ngIf="isEdit">   </td>
+          </tr>
+          <tr>
+              <td>   </td>
+              <td>   </td>
+              <td>   </td>
+              <td colspan="2">
+              <button *ngIf="!isEdit" type="button" class="btn btn-default" (click)="isEdit=true">編輯訂單</button>&nbsp;
+              <button *ngIf="isEdit" type="button" class="btn btn-default" (click)="doCancel()">取消編輯</button>&nbsp;
+              <button *ngIf="isEdit" type="button" class="btn btn-default" (click)="doEdit()">儲存編輯</button>&nbsp;
+              </td>
+              <td *ngIf="isEdit">   </td>
+          </tr>
+      </tbody>
+  </table>
+</div>

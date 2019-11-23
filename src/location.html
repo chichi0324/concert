@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>MyTicket票券網</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="short Icon" type="images/x-icon" href="assets/images/ticket.png">
+		<link rel="stylesheet" href="assets/css/location.css">
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    <script src="assets/js/location.js"></script>
+
+  </head>
+	<body>
+
+
+
+	<!--導覽列==========================================================================-->
+<header>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="concert_index.html" class="navbar-brand" href="#" id="navbar-title"><img src="assets/images/ticket.png" width="30px" id="imgTop" class="pull-left"><b>MyTicket票券網</b></a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a href="#" style="background-color:#C63300;border-color: #C63300;">演唱會門票</a></li>
+        <li><a href="#">戲劇活動門票</a></li>
+        <li><a href="#">音樂節門票</a></li>
+        <li><a href="#">體育比賽門票</a></li>
+        <li><a href="#">會員專區</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+           <li><a href="#"><span class="glyphicon glyphicon-user"></span><b> 會員登入</b></a></li>
+    </ul>       
+    
+ </div>
+</nav>
+</header>
+
+
+
+<div class="container">
+ <!--第一列===================================================================-->
+  <div class="row firstRow">
+
+    <form class="form-horizontal">
+
+    <div class="col-xs-12 col-sm-4">
+      <br>
+        <img src="assets/images/mrchildren.jpg" width="100%" height="30%" class="pull-left"> 
+    </div>
+
+    <div class="col-xs-12 col-sm-8">
+      <div>
+            <br>
+            <label class="control-label"><h3>Mr.Children against all gravity</h3></label>
+            <div>
+              <select width="90%">
+                <option value="1">2019/04/19(五)18:00 Mr.Children against all gravity<台北小巨蛋></option>
+                <option value="2">2019/04/20(六)16:30 Mr.Children against all gravity<台北小巨蛋></option>
+              </select>
+            </div>
+            <br>            
+            <input type="checkbox" name="agree"> 我已經閱讀並同意 授權條款 與 隱私權政策
+            <br><br>
+            <a href="order.html" class="btn btn-info" role="button" >下一步</a>
+            <!-- disabled="disabled" -->
+      </div>
+      </form>
+    </div>
+
+  </div>
+
+ <!--第二列===================================================================-->
+
+  <div class="row">
+   <!--第二列左邊部份==================================================-->
+    <div class="col-xs-12 col-sm-7 " id="concert_list">
+      <img src="assets/images/location.jpeg" width="100%" class="pull-left"> 
+    </div>
+
+
+<!--第二列右邊部份==================================================-->
+    <div class="col-xs-12 col-sm-5 " id="concert_content">
+      <div>
+        <div>
+        <h4 style="color: blue;"><b>請選擇區域及張數</b>          
+        </h4>
+        </div>     
+        <div>
+          <div class="zone-label">
+            <span style="background: #007f00;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <b>搖滾區5800</b>
+          </div>
+          <ul class="area_price">
+            <li><a href="#" class="area">搖滾A區5800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">搖滾B區5800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="zone-label">
+            <span style="background: #4cbf8d;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <b>搖滾區5200</b>
+          </div>
+          <ul class="area_price">
+            <li><a href="#" class="area">搖滾C區5200</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="zone-label">
+            <span style="background: #f9581d;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <b>座位區4800</b>
+          </div>
+          <ul class="area_price">
+            <li><a href="#" class="area">紅2B區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">紅2C區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">紅2D區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">紫2B區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">紫2C區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">紫2D區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃2B區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃2C區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃2D區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="zone-label">
+            <span style="background: #0072e5;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <b>座位區4500</b>
+          </div>
+          <ul class="area_price">
+            <li><a href="#" class="area">紅2E區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">紫2E區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃2A區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃2E區4800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="zone-label">
+            <span style="background: #f7a820;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <b>座位區3800</b>
+          </div>
+          <ul class="area_price">
+            <li><a href="#" class="area">黃3C區3800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3D區3800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3E區3800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3F區3800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3G區3800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3H區3800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="zone-label">
+            <span style="background: #f7a820;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <b>座位區2800</b>
+          </div>
+          <ul class="area_price">
+            <li><a href="#" class="area">黃3A區2800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3B區2800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3C區2800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3D區2800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3E區2800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3F區2800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3G區2800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3H區2800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3I區2800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3J區2800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="zone-label">
+            <span style="background: #f7a820;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <b>座位區1800</b>
+          </div>
+          <ul class="area_price">
+            <li><a href="#" class="area">黃3B區1800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3C區1800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3D區1800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3E區1800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3F區1800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3G區1800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3H區1800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3I區1800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="zone-label">
+            <span style="background: #ffffaa;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <b>座位區800</b>
+          </div>
+          <ul class="area_price">
+            <li><a href="#" class="area">黃3C區800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3D區800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3E區800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3F區800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3G區800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+            <li><a href="#" class="area">黃3H區800</a>
+            <button class="buttonAdd">+</button>
+             <input type="text" size="1" value="0" class="count">  
+            <button class="buttonLess" id="btless1">-</button>    
+            <span class="area_state">熱賣中</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div> 
+  </div>
+
+</div>
+
+<!--底部平台介紹================================================================-->
+  
+
+    <footer >
+      <div class="container">
+        <div class="col-sm-2">
+          <img src="assets/images/ticket.png" class="img-responsive">
+        </div>
+        <div class="col-sm-2">
+          <h5>公司</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">文件資料</a></li>
+            <li><a href="#">Packt出版社</a></li>
+            <li><a href="#">關於我們</a></li>
+            <li><a href="#">聯絡資訊</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5>社群</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">部落格</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5>客戶支援</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">聯絡資訊</a></li>
+            <li><a href="#">隱私政策</a></li>
+            <li><a href="#">條款與細則</a></li>
+            <li><a href="#">服務台</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <address>
+            <strong>MyTicket票券網</strong>
+             地址第 1 行<br>
+			       地址第 2 行<br>
+            <abbr title="Phone">TEL：</abbr> (02) 1234-5678
+          </address>
+        </div>
+      </div>
+    </footer>
+
+   
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>

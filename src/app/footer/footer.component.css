@@ -1,0 +1,40 @@
+
+footer{
+	background-color: black;
+	color:lightblue;
+	margin-top: 3em;
+}
+
+footer h5,
+footer img{
+	margin-top: 5em;
+	font-weight: bold;
+}
+
+footer address{
+	margin-top:5em;
+	margin-bottom: 5em;
+	color: #eee;
+}
+
+footer ul{
+	margin-bottom: 5em;
+}
+
+footer address strong{
+	color: lightblue;
+	display: block;
+	padding-bottom: 0.62em
+}
+
+footer a{
+	font-weight: 300;
+	color: white;
+}
+
+footer a : hover{
+	text-decoration: none;
+	color: #FFF;
+}
+
+

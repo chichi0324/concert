@@ -1,0 +1,68 @@
+<div class="container areaSection">
+  <!--第一列===================================================================-->
+   <div class="row firstRow">
+
+     <form class="form-horizontal">
+
+     <div class="col-xs-12 col-sm-4">
+       <br>
+         <img src="{{show.pic}}" width="100%" height="30%" class="pull-left">
+     </div>
+
+     <div class="col-xs-12 col-sm-8">
+       <div>
+             <br>
+             <label class="control-label"><h3>{{show.name}}</h3></label>
+             <div>
+               <select width="90%" (change)="getSelectedShow($event)" [value]='0'>
+                 <option value="{{idx}}" *ngFor="let session of show.sessions; let idx=index">{{session}}</option>
+               </select>
+             </div>
+             <br>
+             <input type="checkbox" #agreeCheckBox id="agree" name="agree"
+                    (change)="changedCkeckBox(agreeCheckBox.checked)"> 我已經閱讀並同意 授權條款 與 隱私權政策
+             <br><br>
+             <a *ngIf="showButton" routerLink="/order" class="btn btn-info" role="button" (click)="getTicket()">下一步</a>
+             <a *ngIf="!showButton" class="btn btn-info" role="button" disabled="disabled">下一步</a>
+       </div>
+     </div>
+    </form>
+   </div>
+
+  <!--第二列===================================================================-->
+
+   <div class="row">
+    <!--第二列左邊部份==================================================-->
+     <div class="col-xs-12 col-sm-7 " id="concert_list">
+       <img src="assets/images/location.jpeg" width="100%" class="pull-left">
+     </div>
+
+
+ <!--第二列右邊部份==================================================-->
+     <div class="col-xs-12 col-sm-5 " id="concert_content">
+       <div>
+         <div>
+         <h4 style="color: blue;"><b>請選擇區域及張數</b>
+         </h4>
+         </div>
+         <div *ngFor="let area of areaData;">
+           <div class="zone-label">
+             <span [style.background]="area.color">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+             <b>{{area.name}}</b>
+           </div>
+           <ul class="area_price">
+             <li *ngFor="let section of area.sections;">
+             <a href="#" class="area">{{section.name}}</a>
+             <button class="buttonAdd" (click)="doAdd(section)">+</button>
+              <input type="text" size="1" value="{{section.qty}}" class="count" [(ngModel)]="section.qty">
+             <button class="buttonLess" (click)="doDecrease(section)">-</button>
+             <span class="area_state">{{section.status}}</span>
+             </li>
+           </ul>
+         </div>
+
+       </div>
+     </div>
+
+
+   </div>

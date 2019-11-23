@@ -1,0 +1,42 @@
+.row{
+margin-top: 3%;
+}
+
+.area:hover{
+  background-color: #eee;
+  text-decoration:none;
+}
+
+.zone-label{
+  background-color: #eee;
+  width: 80%;
+}
+
+.area_price{
+list-style-type:none;
+}
+
+.area_state{
+  color:red;
+}
+
+.buttonAdd{
+  border-radius: 50%;
+}
+
+.buttonLess{
+  border-radius: 50%;
+}
+
+.firstRow{
+  padding: 30px;
+  background-color: #eee;
+}
+
+li{
+  color: gray;
+}
+
+#address{
+  width:150px;
+}

@@ -1,0 +1,26 @@
+
+tr{
+  padding: 10px
+}
+
+
+td{
+  padding: 3px;
+}
+
+table{
+  word-break: keep-all;
+}
+
+.show_img{
+  padding: 5px;
+  width: 100%;
+}
+
+.selected_hide{
+  display : none;
+}
+
+.selected_show{
+  display : inline;
+}

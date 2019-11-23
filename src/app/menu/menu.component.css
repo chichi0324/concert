@@ -1,0 +1,9 @@
+#concert_list{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+ul .concert_left{
+  background-color: #FFEE99;
+  color: black;
+}

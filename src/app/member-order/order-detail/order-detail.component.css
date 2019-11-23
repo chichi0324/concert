@@ -1,0 +1,21 @@
+
+tr{
+  padding: 10px
+}
+
+
+td{
+  padding: 3px;
+}
+
+table{
+  word-break: keep-all;
+}
+
+.selected_hide{
+  display : none;
+}
+
+.selected_show{
+  display : inline;
+}

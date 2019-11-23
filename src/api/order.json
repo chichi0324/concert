@@ -1,0 +1,62 @@
+[
+  {
+    "id" : "order1",
+    "showId": "show1",
+    "name": "Mr.Children 巡迴-台灣場",
+    "location": "台北小巨蛋",
+    "show": "2019/04/19(五)18:00 Mr.Children against all gravity Tour ",
+    "pic": "assets/images/mrchildren.jpg",
+    "showDetail" : "顯示明細",
+    "area": [
+      {
+        "name": "搖滾A區5800",
+        "qty":1,
+        "status":"剩少量",
+        "unit_pric":5800},
+      {
+        "name": "紫2B區4800",
+        "qty":1,
+        "status":"熱賣中",
+        "unit_pric":4800},
+      {
+        "name": "黃3H區800",
+        "qty":2,
+        "status":"剩少量",
+        "unit_pric":800}]
+  },
+  {
+    "id" : "order2",
+    "showId": "show2",
+    "name": "Spitz 30週年-台北站",
+    "location": "台北小巨蛋",
+    "show": "2019/05/19(日)18:00 Spitz 30th anniversary tour",
+    "pic": "assets/images/spitz.jpg",
+    "showDetail" : "顯示明細",
+    "area": [
+      {
+        "name": "紅2E區4800",
+        "qty":1,
+        "status":"熱賣中",
+        "unit_pric":4500},
+      {
+        "name": "黃3F區1800",
+        "qty":2,
+        "status":"熱賣中",
+        "unit_pric":1800}]
+  },
+  {
+    "id" : "order3",
+    "showId": "show4",
+    "name": "GReeeeN 奇蹟-高雄站",
+    "location": "高雄巨蛋",
+    "show": "2019/08/03(六)18:00 Greeeen tour 2019",
+    "pic": "assets/images/greeeen.jpg",
+    "showDetail" : "顯示明細",
+    "area": [
+      {
+        "name": "黃2C區4800",
+        "qty":4,
+        "status":"剩少量",
+        "unit_pric":4800}]
+  }
+]
